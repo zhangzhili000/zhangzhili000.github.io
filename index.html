@@ -16,6 +16,7 @@
         padding-top: 60px;
         /* 60px to make the container go all the way to the bottom of the topbar */
     }
+
     </style>
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -26,17 +27,19 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-0 col-xs-0" style="height: 5px;"></div>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </button>
+                    <img class="img-rounded" src="image/LOGO.png " alt="placeholder image" height="100%">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-menu">
+            <div class="collapse navbar-collapse " id="navbar-menu">
                 <ul class="nav nav-pills navbar-right">
                     <li class="active"><a href="# " id="home">Home</a></li>
-                    <li><a href="#contact " id="blog">Blog</a></li>
-                    <li><a href="#about " id="about">About</a></li>
-                    <li><a href="#contact " id="contact">Contact</a> </li>
+                    <li><a href="#" id="blog">Blog</a></li>
+                    <li><a href="#" id="about">About</a></li>
+                    <li><a href="#" id="contact">Contact</a> </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -45,20 +48,20 @@
     <div class="container showIndex" id="hometab">
         <div class="row">
             <!-- 左边的区域。left area. -->
+            <div class="col-lg-0 col-md-0 col-sm-0 col-xs-12" style="height: 30px;">
+            </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img class="img-rounded " src="image/LOGO.png " alt="placeholder image " width=100% height=auto>
                 <h3><kbd> 欢迎来到我的博客 </kbd></h3>
                 <h4>站点简介和个人信息.</h4>
                 <p class=" ">今日开始学习JQuery与Bootstrap，做这个页面是为了放在Github上面集中展示我的一些文字。如果文中有什么地方写的不对，欢迎联系我进行再研究，共同探讨。望各路大神不吝赐教，互相交流，提高技术水平。
                 </p>
-
                 <p class=" " style="text-align: right;">张智立 &nbsp;&nbsp;&nbsp;&nbsp;
                 </p>
                 <p class=" " style="text-align: right;">2018年4月27日
                 </p>
             </div>
             <!-- 右边的区域。right area. -->
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id = "blogtab">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="blogtab">
                 <!-- 一篇文章开始 -->
                 <div class="row-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <!-- 标题 -->
@@ -201,6 +204,20 @@
         </div>
     </div>
     <!-- /container -->
+    <!-- blog begin -->
+    <div class="container showIndex" id="blogtab" style="display: none;">
+        <div>
+            this is blog!
+            <br> this is blog!
+            <br> this is blog!
+            <br> this is blog!
+            <br> this is blog!
+            <br> this is blog!
+            <br> this is blog!
+            <br>
+        </div>
+    </div>
+    <!-- blog ending -->
     <!-- about begin -->
     <div class="container showIndex" id="abouttab" style="display: none;">
         <div>
